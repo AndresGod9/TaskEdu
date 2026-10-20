@@ -16,6 +16,7 @@ export function validateTaskInput(input) {
   const errors = [];
 
   if (!title) errors.push('Escribe el titulo de la tarea.');
+  if (title.length > 100) errors.push('El titulo no puede superar los 100 caracteres.');
   if (!subject) errors.push('Escribe la asignatura.');
   if (!dueDate) errors.push('Selecciona la fecha de entrega.');
 

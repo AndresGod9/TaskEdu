@@ -2,7 +2,7 @@ TASKEDU - RESULTADO DE PRUEBAS AUTOMATIZADAS
 ============================================
 
 Comando ejecutado: npm test
-Resultado: 10 pruebas aprobadas, 0 pruebas fallidas.
+Resultado: 11 pruebas aprobadas, 0 pruebas fallidas.
 
 Pruebas cubiertas:
 - Registro y validacion de tareas (HU-01).
@@ -10,7 +10,3 @@ Pruebas cubiertas:
 - Cambio de estado (HU-03).
 - Prueba de integracion del flujo principal.
 - Prueba de aceptacion de las historias HU-01 a HU-04.
-
-Nota: esta es la ejecucion local realizada al preparar el paquete.
-Despues de subir el proyecto a GitHub, toma una captura de la ejecucion
-real del flujo en la pestana Actions para completar esa evidencia.

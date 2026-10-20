@@ -96,3 +96,19 @@ test('prueba de aceptacion: se satisfacen los criterios principales de HU-01 a H
   assert.equal(result.tasks[0].status, TASK_STATUS.COMPLETED);
   assert.equal(filterTasks(result.tasks, TASK_STATUS.COMPLETED).length, 1);
 });
+
+test('HU-01: rechaza titulos de mas de 100 caracteres', () => {
+  const longTitle = 'A'.repeat(101);
+
+  const validation = validateTaskInput({
+    ...sampleInput,
+    title: longTitle,
+  });
+
+  assert.equal(validation.valid, false);
+  assert.ok(
+    validation.errors.some((error) =>
+      error.includes('100 caracteres')
+    )
+  );
+});

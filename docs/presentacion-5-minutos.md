@@ -18,8 +18,6 @@ Preparamos pruebas para validar el registro de tareas, impedir un titulo vacio, 
 
 ## 5. Resultado y retrospectiva (1 minuto)
 
-## 5. Resultado y retrospectiva (1 minuto)
-
 Con esta versión entregamos un producto mínimo viable para organizar tareas académicas. Entre los aprendizajes del equipo están el uso de Git y GitHub para controlar los cambios, la revisión del código mediante Pull Requests y la ejecución de pruebas automatizadas.
 
 Una dificultad fue aprender a trabajar con ramas y revisar los cambios antes de integrarlos. Para el siguiente sprint proponemos comprobar los criterios de aceptación y adjuntar las evidencias antes de mover cada tarjeta a Terminado.

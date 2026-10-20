@@ -1,26 +1,28 @@
 # Informe breve de retrospectiva - TaskEdu
 
-> Completar despues de la revision real del sprint. No inventar resultados: cambiar los campos entre corchetes con lo que sucedio en el equipo.
-
 ## Resultado del sprint
 
-- **Historias terminadas:** [indicar HU completadas].
-- **Historias pendientes:** [indicar HU que quedaron por hacer y por que].
-- **Resultado de las pruebas:** [numero de pruebas aprobadas/fallidas y evidencia].
-- **Resultado de CI:** [exito/fallo y enlace a la ejecucion de GitHub Actions].
+- **Historias terminadas:** HU-01, Registrar tarea, y la actividad de revisión de código y control de versiones, de acuerdo con el estado actual de Trello.
+- **Historias pendientes:** HU-02, Consultar tareas; HU-03, Cambiar estado de tarea; y HU-04, Filtrar tareas. Deben verificarse sus criterios de aceptación antes de marcarlas como terminadas.
+- **Resultado de las pruebas:** Las pruebas automatizadas anteriores estaban aprobadas. Se agregó una prueba para rechazar títulos de más de 100 caracteres. **Confirmar el número final de pruebas aprobadas y fallidas después de integrar el cambio.**
+- **Resultado de integración continua:** GitHub Actions aparece en verde después de la integración del Pull Request.
 
-## Que funciono bien?
+## ¿Qué funcionó bien?
 
-[Ejemplo para adaptar solo si realmente ocurrio: tener las tareas visibles en Trello ayudo a saber que estaba pendiente y quien estaba trabajando en cada actividad.]
+La organización del código en archivos separados facilitó la revisión de la validación de tareas. También fue útil utilizar GitHub para trabajar con ramas, revisar los cambios mediante un Pull Request y ejecutar comprobaciones automáticas antes de integrar el código a la rama principal.
 
-## Que dificultad encontramos?
+Trello permitió organizar las historias de usuario y visualizar el avance del proyecto.
 
-[Describir una dificultad real, como conflictos al integrar ramas, validacion de datos, configuracion del servidor local o coordinacion de horarios.]
+## ¿Qué dificultad encontramos?
 
-## Que aprendimos?
+Durante el trabajo fue necesario aprender a crear ramas, editar archivos en GitHub y realizar una revisión formal del código. También fue importante comprobar que la nueva validación no reemplazara las validaciones que ya existían.
 
-[Explicar que aprendio el CIPA sobre Git, revision de codigo, pruebas, Trello o trabajo en pareja.]
+**Completar con otra dificultad real del equipo, si la hubo.**
 
-## Accion concreta para el siguiente sprint
+## ¿Qué aprendimos?
 
-[Ejemplo para adaptar: revisar el estado de las tareas al inicio de cada reunion y no mover una tarjeta a "Terminado" hasta adjuntar la evidencia de pruebas.]
+Aprendimos a utilizar ramas para separar cambios, crear Pull Requests para solicitar revisiones y usar GitHub Actions para comprobar automáticamente el proyecto. También comprendimos que una mejora debe acompañarse de una prueba que permita verificar su comportamiento.
+
+## Acción concreta para el siguiente sprint
+
+Antes de finalizar una historia de usuario, revisaremos sus criterios de aceptación, ejecutaremos las pruebas correspondientes y adjuntaremos las evidencias en Trello. Además, mantendremos actualizados los responsables y el estado de cada tarjeta.

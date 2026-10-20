@@ -23,10 +23,10 @@ Completar los nombres reales del CIPA. La guia permite rotar los roles.
 
 | Rol | Responsable | Tareas principales |
 |---|---|---|
-| Product Owner | [nombre] | Aclarar las historias y priorizar el backlog. |
-| Scrum Master | [nombre] | Dar seguimiento, coordinar revisiones y ayudar a resolver bloqueos. |
-| Desarrollador | [nombre] | Implementar funcionalidades, ramas y cambios. |
-| Responsable de pruebas | [nombre] | Ejecutar las pruebas, guardar evidencias y comprobar los criterios. |
+| Product Owner | Esteban Sampayo | Aclarar las historias y priorizar el backlog. |
+| Scrum Master | Andres Vasquez | Dar seguimiento, coordinar revisiones y ayudar a resolver bloqueos. |
+| Desarrollador | Daniel Rojas | Implementar funcionalidades, ramas y cambios. |
+| Responsable de pruebas | Andres Escobar | Ejecutar las pruebas, guardar evidencias y comprobar los criterios. |
 
 ## Practicas del equipo
 

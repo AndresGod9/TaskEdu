@@ -13,9 +13,9 @@ Copia cada historia como una tarjeta. Los nombres de responsables y las fechas d
 - **Criterios de aceptacion:** registra titulo, asignatura y fecha; rechaza un titulo vacio; muestra un mensaje de confirmacion.
 - **Prioridad:** Alta.
 - **Estimacion:** 3 puntos.
-- **Responsable:** [nombre de integrante].
+- **Responsable:** Esteban Sampayo.
 - **Checklist:** formulario creado; validaciones probadas; confirmacion visible; revision por otro integrante; pruebas satisfactorias.
-- **Fecha de entrega:** [fecha del sprint].
+- **Fecha de entrega:** 2 de noviembre de 2026.
 - **Rama:** `feature/HU-01`.
 - **Evidencia de pruebas:** resultado de `npm test` y verificacion manual del formulario.
 
@@ -24,9 +24,9 @@ Copia cada historia como una tarjeta. Los nombres de responsables y las fechas d
 - **Criterios de aceptacion:** muestra todas las tareas; cada una indica asignatura, fecha y estado; muestra un mensaje si no hay tareas.
 - **Prioridad:** Alta.
 - **Estimacion:** 2 puntos.
-- **Responsable:** [nombre de integrante].
+- **Responsable:** Andres Vasquez.
 - **Checklist:** lista visible; asignatura, fecha y estado visibles; mensaje de lista vacia; revision de codigo; pruebas satisfactorias.
-- **Fecha de entrega:** [fecha del sprint].
+- **Fecha de entrega:** 2 de noviembre de 2026.
 - **Rama:** `feature/HU-02`.
 - **Evidencia de pruebas:** prueba de lista y captura de la aplicacion con tareas y sin tareas.
 
@@ -35,9 +35,9 @@ Copia cada historia como una tarjeta. Los nombres de responsables y las fechas d
 - **Criterios de aceptacion:** cambia de "Pendiente" a "Terminada"; el cambio se ve de inmediato; el estado se conserva al actualizar la aplicacion.
 - **Prioridad:** Alta.
 - **Estimacion:** 3 puntos.
-- **Responsable:** [nombre de integrante].
+- **Responsable:** Daniel Rojas.
 - **Checklist:** boton cambia estado; resumen se actualiza; persistencia verificada tras recargar; revision de codigo; pruebas satisfactorias.
-- **Fecha de entrega:** [fecha del sprint].
+- **Fecha de entrega:** 2 de noviembre de 2026.
 - **Rama:** `feature/HU-03`.
 - **Evidencia de pruebas:** prueba automatica de cambio de estado y captura antes/despues de recargar.
 
@@ -46,9 +46,9 @@ Copia cada historia como una tarjeta. Los nombres de responsables y las fechas d
 - **Criterios de aceptacion:** permite elegir "Todas", "Pendientes" o "Terminadas"; los resultados corresponden al filtro elegido.
 - **Prioridad:** Media.
 - **Estimacion:** 2 puntos.
-- **Responsable:** [nombre de integrante].
+- **Responsable:** Andres Escobar.
 - **Checklist:** selector visible; filtro Todas verificado; Pendientes verificado; Terminadas verificado; revision de codigo; pruebas satisfactorias.
-- **Fecha de entrega:** [fecha del sprint].
+- **Fecha de entrega:** 2 de noviembre de 2026.
 - **Rama:** `feature/HU-04`.
 - **Evidencia de pruebas:** pruebas automaticas de filtros y captura de cada filtro.
 
@@ -56,18 +56,18 @@ Copia cada historia como una tarjeta. Los nombres de responsables y las fechas d
 - **Descripcion:** configurar pruebas automaticas y GitHub Actions para que descargue el codigo y ejecute la suite de pruebas.
 - **Prioridad:** Alta.
 - **Estimacion:** 2 puntos.
-- **Responsable:** [nombre de integrante].
+- **Responsable:** Ronald Payares.
 - **Checklist:** `npm test` funciona localmente; workflow anadido; push realizado; resultado visible en Actions; enlace/captura adjunto.
-- **Fecha de entrega:** [fecha del sprint].
+- **Fecha de entrega:** 2 de noviembre de 2026.
 - **Rama:** `feature/CI-tests`.
 
 ### Tarjeta tecnica - Revision y refactorizacion
 - **Descripcion:** revisar el codigo con otro integrante y documentar una mejora interna que no cambie el comportamiento.
 - **Prioridad:** Media.
 - **Estimacion:** 2 puntos.
-- **Responsable:** [nombre de integrante].
+- **Responsable:** Esteban Sampayo.
 - **Checklist:** pull request creado; otro integrante revisa; cambio aprobado; pruebas pasan despues de la refactorizacion; evidencia adjunta.
-- **Fecha de entrega:** [fecha del sprint].
+- **Fecha de entrega:** 2 de noviembre de 2026.
 
 ## Etiquetas recomendadas
 

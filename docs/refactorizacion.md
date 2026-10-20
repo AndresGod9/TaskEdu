@@ -13,5 +13,3 @@ Esta separacion reduce la mezcla entre presentacion y reglas de la aplicacion, h
 ## Evidencia para la actividad
 
 Para que la refactorizacion quede reflejada en el proceso de equipo, crea una rama, registra el cambio con un mensaje como `refactor: separar la logica de tareas de la interfaz`, abre un pull request y pide a otro integrante que revise el codigo. Adjunta a la tarjeta de Trello el enlace del pull request y el resultado exitoso de `npm test`.
-
-> La revision por otro integrante debe realizarse con el CIPA en el repositorio real; este documento no reemplaza esa revision ni el enlace de evidencia.

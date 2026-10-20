@@ -1,0 +1,160 @@
+GUIA PASO A PASO PARA ABRIR Y EJECUTAR TASKEDU (WINDOWS)
+=======================================================
+
+QUE NECESITAS
+-------------
+1. El archivo ZIP de TaskEdu.
+2. Un navegador como Chrome o Edge.
+3. Node.js para ejecutar las pruebas.
+4. Python o la extension Live Server de Visual Studio Code para abrir la app localmente.
+5. Git solo si vas a publicar el proyecto en GitHub.
+
+PASO 1. DESCARGAR Y DESCOMPRIMIR
+--------------------------------
+1. Descarga TaskEdu-entrega.zip.
+2. Abre la carpeta Descargas de Windows.
+3. Haz clic derecho en TaskEdu-entrega.zip.
+4. Selecciona "Extraer todo..." y luego "Extraer".
+5. Abre la carpeta resultante. Debes ver README.md, index.html, package.json y las carpetas src, tests y docs.
+
+PASO 2. INSTALAR NODE.JS
+------------------------
+1. Abre https://nodejs.org en el navegador.
+2. Descarga la version LTS para Windows.
+3. Ejecuta el instalador y conserva las opciones predeterminadas.
+4. Cuando termine, cierra y vuelve a abrir Visual Studio Code si ya estaba abierto.
+5. Abre una terminal y escribe:
+
+   node -v
+   npm -v
+
+Cada comando debe mostrar un numero de version. Si Windows dice que el comando no se reconoce, reinicia Visual Studio Code. Si sigue igual, verifica la instalacion de Node.js.
+
+PASO 3. ABRIR LA CARPETA EN VISUAL STUDIO CODE
+---------------------------------------------
+1. Si no tienes Visual Studio Code, puedes instalarlo desde https://code.visualstudio.com.
+2. Abre Visual Studio Code.
+3. En el menu, selecciona File > Open Folder (Archivo > Abrir carpeta).
+4. Busca la carpeta TaskEdu que extrajiste y selecciona "Seleccionar carpeta".
+5. Si aparece una pregunta de confianza, confirma que confias en la carpeta que tu mismo descargaste.
+6. En el menu superior, selecciona Terminal > New Terminal (Terminal > Nueva terminal).
+7. La terminal debe abrirse dentro de la carpeta TaskEdu. Si escribes `dir`, deben aparecer index.html y package.json.
+
+PASO 4. EJECUTAR LAS PRUEBAS
+----------------------------
+En la terminal de Visual Studio Code, escribe:
+
+   npm test
+
+Presiona Enter y espera a que termine. El resultado esperado es 10 pruebas aprobadas y 0 fallidas. Si aparece un error, copia el mensaje completo para poder revisarlo.
+
+PASO 5. ABRIR LA APLICACION
+---------------------------
+Opcion A: usar Python si ya esta instalado.
+1. En la misma terminal, escribe:
+
+   py -m http.server 8000
+
+2. Si Windows dice que `py` no se reconoce, intenta:
+
+   python -m http.server 8000
+
+3. Cuando veas un mensaje indicando que el servidor esta sirviendo en el puerto 8000, no cierres esa terminal.
+4. Abre Chrome o Edge y escribe esta direccion:
+
+   http://localhost:8000
+
+5. Debe aparecer TaskEdu.
+6. Para detener el servidor, vuelve a la terminal y presiona Ctrl+C.
+
+Opcion B: usar Live Server en Visual Studio Code.
+1. En Visual Studio Code, abre Extensions (el icono de cuadritos del lado izquierdo).
+2. Busca "Live Server" e instala una extension con ese nombre de un editor confiable.
+3. Abre index.html.
+4. Haz clic derecho en el archivo y selecciona "Open with Live Server".
+5. Se abrira el navegador. Para cerrar el servidor, pulsa el boton "Go Live" si aparece activo o cierra Visual Studio Code.
+
+No abras index.html con doble clic como primera opcion: la app usa modulos JavaScript y algunos navegadores restringen su funcionamiento al abrir archivos directamente.
+
+PASO 6. PROBAR LAS FUNCIONES
+----------------------------
+1. Escribe un titulo, por ejemplo: Entregar taller.
+2. Escribe una asignatura, por ejemplo: Programacion.
+3. Selecciona una fecha de entrega.
+4. Pulsa "Guardar tarea". La tarea debe aparecer en la lista.
+5. Pulsa "Marcar terminada". El estado debe cambiar.
+6. Actualiza la pagina. La tarea debe seguir apareciendo con el mismo estado.
+7. Usa el filtro para ver Todas, Pendientes o Terminadas.
+8. Intenta guardar un formulario con el titulo vacio. Debe aparecer un mensaje y no debe crearse la tarea.
+
+Los datos se guardan en el almacenamiento local del mismo navegador y equipo. Esta version no sincroniza tareas entre dispositivos.
+
+PASO 7. PUBLICAR EN GITHUB (PARA LA ENTREGA)
+--------------------------------------------
+A. Crear el repositorio
+1. Entra a https://github.com e inicia sesion.
+2. Pulsa el signo + y selecciona "New repository".
+3. Escribe TaskEdu como nombre.
+4. Elige Public o Private segun las instrucciones de tu curso.
+5. No selecciones la opcion de crear un README, porque el proyecto ya trae uno.
+6. Pulsa "Create repository".
+
+B. Instalar y comprobar Git
+1. Si Git no esta instalado, descargalo de https://git-scm.com/downloads e instalalo con las opciones predeterminadas.
+2. Cierra y abre de nuevo la terminal de Visual Studio Code.
+3. Escribe `git --version`. Debe mostrar un numero de version.
+
+C. Subir el proyecto
+En la terminal, confirma que estas dentro de la carpeta TaskEdu. Ejecuta uno por uno los siguientes comandos. Cambia TU-USUARIO por tu nombre de usuario real de GitHub:
+
+   git init
+   git add .
+   git commit -m "feat: create TaskEdu MVP"
+   git branch -M main
+   git remote add origin https://github.com/TU-USUARIO/TaskEdu.git
+   git push -u origin main
+
+Si Git te pide iniciar sesion, sigue la ventana que abra GitHub. Si aparece un error en algun comando, no repitas todos los comandos a ciegas; copia el error para revisarlo.
+
+Si dice que `origin` ya existe, usa este comando y reemplaza la URL con la de tu repositorio:
+
+   git remote set-url origin https://github.com/TU-USUARIO/TaskEdu.git
+
+PASO 8. VERIFICAR LA INTEGRACION CONTINUA
+----------------------------------------
+1. Entra en el repositorio TaskEdu de GitHub.
+2. Abre la pestana Actions.
+3. Selecciona el flujo "Pruebas TaskEdu".
+4. Espera a que termine.
+5. Guarda una captura real donde se vea el resultado exitoso. Si falla, abre el paso que tiene el error y revisalo.
+
+PASO 9. PREPARAR TRELLO Y LA ENTREGA
+------------------------------------
+1. Crea un tablero de Trello para TaskEdu.
+2. Crea estas listas en este orden:
+   - Product Backlog
+   - Sprint Backlog
+   - En desarrollo
+   - Revision de codigo
+   - Pruebas
+   - Terminado
+3. Usa las tarjetas y los criterios de `docs/backlog-trello.md` para cargar las cuatro historias de usuario.
+4. Completa responsables y fechas con los datos reales de tu CIPA.
+5. Sigue `docs/checklist-evidencias.md` para las capturas y los enlaces de entrega.
+6. Completa `docs/retrospectiva.md` con lo que realmente sucedio. No inventes resultados ni reuniones.
+7. Usa `docs/presentacion-5-minutos.md` para preparar la exposicion; reemplaza los campos entre corchetes por informacion real.
+
+ARCHIVOS IMPORTANTES
+--------------------
+- README.md: resumen, funciones y estructura del proyecto.
+- index.html: pagina principal de la aplicacion.
+- styles.css: estilos visuales.
+- src/app.js: interaccion de la pagina y almacenamiento en el navegador.
+- src/task-manager.js: funciones para validar, crear, cambiar y filtrar tareas.
+- tests/task-manager.test.js: pruebas automatizadas.
+- .github/workflows/ci.yml: configuracion de integracion continua.
+- docs/: documentos de planificacion, pruebas, tablero, evidencias y presentacion.
+
+IMPORTANTE
+----------
+El ZIP deja los archivos preparados, pero no crea un tablero en tu cuenta ni publica el repositorio por ti. Debes hacer esos pasos con tus propias cuentas y tomar las capturas reales requeridas por la actividad.

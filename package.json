@@ -1,0 +1,14 @@
+{
+  "name": "taskedu",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Producto minimo viable para organizar tareas academicas, desarrollado como ejercicio de implementacion agil.",
+  "scripts": {
+    "test": "node --test",
+    "test:unit": "node --test tests/task-manager.test.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

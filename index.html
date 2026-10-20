@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="TaskEdu: gestor sencillo de tareas academicas.">
+  <title>TaskEdu | Mis tareas academicas</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="#inicio" aria-label="TaskEdu, inicio">
+        <span class="brand-mark" aria-hidden="true">T</span>
+        <span><strong>TaskEdu</strong><small>Organiza tu vida academica</small></span>
+      </a>
+      <span class="header-note">Menos olvidos, mas avances</span>
+    </div>
+  </header>
+
+  <main id="inicio" class="page-shell">
+    <section class="intro" aria-labelledby="page-title">
+      <div>
+        <p class="eyebrow">MI ESPACIO DE ESTUDIO</p>
+        <h1 id="page-title">Tus tareas, en un solo lugar.</h1>
+        <p class="intro-copy">Registra tus actividades, revisa las fechas de entrega y marca lo que ya terminaste.</p>
+      </div>
+      <div class="summary-card" aria-live="polite">
+        <span class="summary-label">Tareas por terminar</span>
+        <strong id="pending-count">0</strong>
+        <span class="summary-foot">Un paso a la vez.</span>
+      </div>
+    </section>
+
+    <div id="status-message" class="status-message" role="status" aria-live="polite" hidden></div>
+
+    <section class="content-grid" aria-label="Gestor de tareas">
+      <section class="panel form-panel" aria-labelledby="form-title">
+        <div class="panel-heading">
+          <div>
+            <p class="eyebrow">NUEVA ACTIVIDAD</p>
+            <h2 id="form-title">Registrar tarea</h2>
+          </div>
+          <span class="heading-icon" aria-hidden="true">+</span>
+        </div>
+        <form id="task-form" novalidate>
+          <label for="task-title">Titulo de la tarea <span class="required">*</span></label>
+          <input id="task-title" name="title" type="text" maxlength="120" placeholder="Ej. Entregar el taller de programacion" required>
+
+          <label for="task-subject">Asignatura <span class="required">*</span></label>
+          <input id="task-subject" name="subject" type="text" maxlength="80" placeholder="Ej. Analisis y diseno de software" required>
+
+          <label for="task-date">Fecha de entrega <span class="required">*</span></label>
+          <input id="task-date" name="dueDate" type="date" required>
+
+          <button class="button button-primary submit-button" type="submit">Guardar tarea <span aria-hidden="true">-></span></button>
+          <p class="form-note"><span class="required">*</span> Completa los tres campos para guardar la actividad.</p>
+        </form>
+      </section>
+
+      <section class="panel tasks-panel" aria-labelledby="tasks-title">
+        <div class="panel-heading tasks-heading">
+          <div>
+            <p class="eyebrow">TU PLAN DE TRABAJO</p>
+            <h2 id="tasks-title">Mis tareas</h2>
+          </div>
+          <span id="task-count" class="count-pill">0 tareas</span>
+        </div>
+
+        <div class="filter-row">
+          <label class="visually-hidden" for="task-filter">Filtrar tareas por estado</label>
+          <select id="task-filter" aria-label="Filtrar tareas por estado">
+            <option value="all">Todas</option>
+            <option value="pending">Pendientes</option>
+            <option value="completed">Terminadas</option>
+          </select>
+          <span id="filter-description" class="filter-description">Todas las actividades</span>
+        </div>
+
+        <div id="task-list" class="task-list" aria-live="polite"></div>
+        <div id="empty-state" class="empty-state">
+          <div class="empty-illustration" aria-hidden="true">[OK]</div>
+          <h3>Aun no hay tareas</h3>
+          <p>Agrega tu primera actividad en el formulario para verla aqui.</p>
+        </div>
+      </section>
+    </section>
+    <footer class="page-footer">
+      <span>TaskEdu</span><span>Un proyecto academico de implementacion agil</span>
+    </footer>
+  </main>
+  <script type="module" src="src/app.js"></script>
+</body>
+</html>

@@ -14,7 +14,9 @@ Usamos Trello para organizar el backlog y mover las tarjetas entre Product Backl
 
 ## 4. Pruebas y calidad (1 minuto)
 
-Preparamos pruebas para validar el registro de tareas, impedir un titulo vacio, comprobar el cambio de estado y revisar los filtros. Tambien tenemos pruebas de integracion y aceptacion sobre el flujo principal. GitHub Actions ejecuta automaticamente la suite de pruebas cuando subimos cambios o abrimos una solicitud de cambio. En la presentacion mostraremos el resultado real de la ejecucion.
+Preparamos pruebas para validar el registro de tareas, impedir un titulo vacio, comprobar el cambio de estado y revisar los filtros. Tambien tenemos pruebas de integracion y aceptacion sobre el flujo principal. GitHub Actions ejecuta automaticamente la suite de pruebas cuando subimos cambios o abrimos una solicitud de cambio. 
+
+En la ejecución más reciente se realizaron 11 pruebas automatizadas: todas fueron aprobadas y ninguna falló. También comprobamos que los títulos que superan los 100 caracteres sean rechazados.
 
 ## 5. Resultado y retrospectiva (1 minuto)
 

@@ -17,8 +17,6 @@ Trello permitió organizar las historias de usuario y visualizar el avance del p
 
 Durante el trabajo fue necesario aprender a crear ramas, editar archivos en GitHub y realizar una revisión formal del código. También fue importante comprobar que la nueva validación no reemplazara las validaciones que ya existían.
 
-**Completar con otra dificultad real del equipo, si la hubo.**
-
 ## ¿Qué aprendimos?
 
 Aprendimos a utilizar ramas para separar cambios, crear Pull Requests para solicitar revisiones y usar GitHub Actions para comprobar automáticamente el proyecto. También comprendimos que una mejora debe acompañarse de una prueba que permita verificar su comportamiento.
